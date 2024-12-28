@@ -100,7 +100,7 @@
   }
   
   .about-section .about-tagline h2 {
-    font-size: 2rem;
+    font-size: 2rem; /* Desktop size */
     margin-bottom: 1rem;
     font-weight: 700;
   }
@@ -160,7 +160,6 @@
     margin-bottom: 2rem;
   }
   
-  /* Ensure same indentation as Past Events */
   .past-events ul,
   .upcoming-events ul {
     list-style: disc;
@@ -218,7 +217,8 @@
   }
   
   /* VIDEO (16:9 RESPONSIVE) */
-  .event-video {
+ /* EVENT VIDEO (16:9) */
+.event-video {
     text-align: center;
     margin: 3rem 0;
     overflow: hidden;
@@ -227,7 +227,7 @@
   .video-container {
     position: relative;
     width: 100%;
-    max-width: 650px;
+    max-width: 650px; /* You can adjust for bigger/smaller on desktop */
     margin: 0 auto;
     padding-bottom: 56.25%; /* 16:9 aspect ratio */
     height: 0;
@@ -239,6 +239,27 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  
+  /* Full Video button styling */
+  .full-video-btn-container {
+    margin-top: 1rem;
+  }
+  
+  .full-video-button {
+    display: inline-block;
+    background: #ff6a3d;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+  }
+  
+  .full-video-button:hover {
+    background: #ff8440;
+    transform: translateY(-2px);
   }
   
   .upcoming-events a {
@@ -299,7 +320,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20px; /* Adjust thickness here if you want */
+    height: 20px; /* Adjust thickness here if desired */
     background: linear-gradient(
       90deg, 
       rgba(0, 0, 0, 1) 0%, 
@@ -324,7 +345,7 @@
   /* MUTE BUTTON */
   .mute-button {
     position: fixed;
-    bottom: 60px; /* Just above the bottom line */
+    bottom: 60px; /* just above the bottom line */
     right: 20px;
     z-index: 99999;
     background: #fff;
@@ -351,9 +372,10 @@
   
   /* RESPONSIVE (MOBILE) STYLES */
   @media (max-width: 768px) {
+  
     .nav-links {
       position: absolute;
-      top: 70px; /* Just below the header */
+      top: 70px; 
       left: 0;
       width: 100%;
       background: #fff;
@@ -381,6 +403,12 @@
       display: block;
     }
   
+    /* 1. Make tagline smaller for phone */
+    .about-section .about-tagline h2 {
+      font-size: 1.3rem; 
+      padding: 0 1rem;
+    }
+  
     .about-section .mission,
     .about-section .what-we-provide,
     .launchpad-section {
@@ -396,4 +424,5 @@
     .carousel-slide img {
       height: 300px;
     }
-  }  
+  }
+  
