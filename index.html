@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Innovators Hub</title>
+  
+  <!-- 2. Updated Font Awesome link -->
+  <script
+    src="https://kit.fontawesome.com/a58ede48c2.js"
+    crossorigin="anonymous"
+  ></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- AUDIO for background music -->
+  <!-- Replace PATH_TO_YOUR_MP3 with your actual mp3 file path/URL. -->
+  <audio id="bgMusic" src="PATH_TO_YOUR_MP3" autoplay loop></audio>
+
+  <!-- HEADER / NAVBAR -->
+  <header>
+    <div class="logo">
+      <!-- Replace with your actual logo image if desired -->
+      <img src="placeholder-logo.png" alt="Innovators Hub Logo" />
+    </div>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#launchpad">Launchpad</a></li>
+        <li>
+          <a 
+            href="https://discord.gg/placeholder"
+            class="join-button"
+            target="_blank"
+          >
+            Join Us
+          </a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="about-tagline">
+        <h2>
+          At Innovators Hub, we inspire our community of ambitious student 
+          entrepreneurs, builders, and innovators, to resolve problems in the 
+          world by turning their crazy ideas into reality. Together, we defy 
+          the odds.
+        </h2>
+        <p class="tagline-note"><em>(Tagline retained verbatim as requested.)</em></p>
+        <a 
+          href="https://discord.gg/placeholder" 
+          target="_blank" 
+          class="cta-button"
+        >
+          Join Us
+        </a>
+      </div>
+
+      <div class="mission">
+        <h2>Our Mission</h2>
+        <p>
+          We want to foster a community where ambition, passion, and innovation 
+          come together. By offering resources, support, and a network of 
+          like-minded peers, we help bring bold ideas to life, resolving 
+          real-world problems while creating impactful values to the world.
+        </p>
+        <p>
+          Join us through our 
+          <a href="https://discord.gg/placeholder" target="_blank">Discord</a> 
+          server (please complete the short 1-min onboarding process).
+        </p>
+      </div>
+
+      <div class="what-we-provide">
+        <h2>What We Provide</h2>
+        <ul>
+          <li>
+            <strong>Discussion Forum:</strong> Engage in lively talks during our 
+            entrepreneurial and networking events to learn and connect with startup founders,
+            industry speakers, and student innovators.
+          </li>
+          <li>
+            <strong>Events:</strong> Attend private company tours (Expedia, Amazon, etc.),
+            local tech conferences and hackathons, and casual gym hangouts for exclusive
+            experiences beyond campus.
+          </li>
+          <li>
+            <strong>Workshops:</strong> Enhance your skills with industry leaders in software
+            engineering, law, design, and business, continuously acquiring knowledge across
+            diverse industries.
+          </li>
+          <li>
+            <strong>Launchpad:</strong> Our 8-week accelerator/incubator program takes you
+            from ideation to launch, offering mentorship and workshops until the Demo Day,
+            where you can pitch to investors.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="section events-section">
+      <h2>Our Events</h2>
+
+      <div class="past-events">
+        <h3>Past Events</h3>
+        <ul>
+          <li>Centific AI Company Tour</li>
+          <li>Expedia Company Tour</li>
+          <li>BC Hacks24</li>
+          <li>AI Entrepreneurial &amp; Networking Event (video below!)</li>
+          <li>Costco IT Open House</li>
+        </ul>
+      </div>
+      
+      <div class="carousel-container">
+        <button class="carousel-btn prev" id="prevBtn">&#10094;</button>
+        <div class="carousel-slide" id="carouselSlide">
+          <!-- Replace src with actual event images -->
+          <img src="placeholder1.jpg" alt="Centific AI Company Tour" />
+          <img src="placeholder2.jpg" alt="Expedia Company Tour" />
+          <img src="placeholder3.jpg" alt="BC Hacks24" />
+          <img src="placeholder4.jpg" alt="AI Entrepreneurial & Networking Event" />
+          <img src="placeholder5.jpg" alt="Costco IT Open House" />
+        </div>
+        <button class="carousel-btn next" id="nextBtn">&#10095;</button>
+      </div>
+      
+      <div class="event-video">
+        <div class="video-container">
+          <iframe
+            src="https://www.youtube.com/embed/vDXkpJw16os?si=a6n7T5Y5ETUPuMyF"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+
+      <!-- 1. Aligned Upcoming Events indentation with Past Events -->
+      <div class="upcoming-events">
+        <h3>Upcoming Events</h3>
+        <ul>
+          <li>
+            Kickoff Meeting - <strong>1/14/25 (Free Food!)</strong>
+            <a href="#" target="_blank">Register here</a>
+          </li>
+          <li>Launchpad Program Start Week</li>
+          <li>Expedia Company Tour</li>
+          <li>UWB Hacks 25</li>
+          <li>BC Hacks 25</li>
+          <li>Amazon Private Company Tour</li>
+          <li>Entrepreneurial & Networking Event</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="launchpad" class="section launchpad-section">
+      <h2>Launchpad</h2>
+      <p>
+        Our 8-week accelerator/incubator program begins on 
+        <strong>1/23</strong>. We guide you from ideation to a functional 
+        product or service, culminating in a Demo Day. Industry mentors and 
+        experts will help you refine your ideas, giving you the tools to pitch 
+        to investors confidently.
+      </p>
+      <p>
+        Full details about the Launchpad will be shared at our 
+        <strong>Kickoff event on 1/14/25</strong>, where we'll also have 
+        <strong>free food!</strong> We can’t wait to see you there!
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="socials">
+      <a href="#" target="_blank" class="social-link">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="#" target="_blank" class="social-link">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+      <a href="mailto:someone@example.com" class="social-link">
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+    </div>
+    <p>&copy; 2024 Innovators Hub. All rights reserved.</p>
+  </footer>
+
+  <!-- FLOWING BOTTOM LINE -->
+  <div class="fixed-bottom-line"></div>
+
+  <!-- 3. Mute/Unmute button bottom-right corner -->
+  <div class="mute-button" id="muteBtn" title="Mute/Unmute">
+    <i class="fa-solid fa-volume-high" id="muteIcon"></i>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
