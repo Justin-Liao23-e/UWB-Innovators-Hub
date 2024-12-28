@@ -127,6 +127,23 @@
     transform: translateY(-2px);
     opacity: 0.9;
   }
+
+  .highlighted-event .cta-button {
+    display: inline-block;
+    background: linear-gradient(135deg, #ffffff 0%, #ffffff 100%);
+    color: #ff8324;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+  
+  .highlighted-event .cta-button:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+  }
   
   /* MISSION, WHAT WE PROVIDE */
   .mission, .what-we-provide {
@@ -271,6 +288,19 @@
   
   .upcoming-events a:hover {
     text-decoration: underline;
+  }
+  
+  .highlighted-event {
+    /* For a noticeable background */
+    background-color: #ffe0cc; /* a soft highlight color */
+    border-left: 5px solid #ff6a3d; /* brand color for emphasis */
+    padding: 1rem;
+    margin-bottom: 1rem;
+  
+    /* Make the text bigger or bolder */
+    font-size: 1.2rem;       /* or more if you want it larger */
+    font-weight: bold;
+    border-radius: 4px;
   }
   
   /* LAUNCHPAD SECTION */
