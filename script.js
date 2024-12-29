@@ -47,11 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // ======= HAMBURGER MENU (Mobile) =======
   const hamburger = document.getElementById('hamburger');
-  const navLinks = document.getElementById('navLinks');
-  
-  hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('mobile-open');
-  });
+  if (hamburger) {
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('mobile-open');
+    });
+  }
   
   // ======= CAROUSEL/SLIDER FOR PAST EVENTS =======
   const carouselSlide = document.getElementById('carouselSlide');
